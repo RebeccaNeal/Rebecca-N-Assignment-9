@@ -1,0 +1,18 @@
+---
+title: "Rebecca N Assignment 9"
+output: html_notebook
+author: "Rebecca Neal"
+date: "9 April 2020"
+version: "2.0 - revised to clean up GitKraken"
+
+---
+
+
+Assignment 9 is utlizing ggplot2 for creating graphics
+
+Load the tidyverse & ggplot2 package
+```{r include=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
