@@ -16,3 +16,18 @@ library(tidyverse)
 library(ggplot2)
 ```
 
+Load data
+```{r include=FALSE}
+SAD <- read_csv("Sexual Abuse Data.csv")
+SAD
+```
+
+### Q1 Create a graph to compare PTSD scores of women who are abused and are not
+```{r}
+ggplot(SAD, aes(x = id, y = ptsd)) +
+  geom_point(aes(color = csa))+
+  labs(x = "Participant Number",
+       y = "Post-traumatic Stress Disorder Scale",
+       title = "PTSD Related to Childhood Sexual Abuse")
+```
+
