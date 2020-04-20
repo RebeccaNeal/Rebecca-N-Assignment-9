@@ -31,3 +31,23 @@ ggplot(SAD, aes(x = id, y = ptsd)) +
        title = "PTSD Related to Childhood Sexual Abuse")
 ```
 
+### Question 2 Create a graph to compare physical abuse scores of abused women
+```{r}
+ggplot(SAD, aes(x = id, y = cpa)) +
+  geom_point(aes(color = csa))+
+  labs(x = "Participant Number",
+       y = "Childhood Physical Abuse Scale",
+       title = "Childhood Physical Abuse Related to Childhood Sexual Abuse")
+```
+
+### Question 3 Plot and use different types of points and colors to seperate
+
+
+
+
+
+
+
+
+
+
