@@ -41,6 +41,14 @@ ggplot(SAD, aes(x = id, y = cpa)) +
 ```
 
 ### Question 3 Plot and use different types of points and colors to seperate
+```{r}
+ggplot(SAD, aes(x = cpa, y = ptsd, color = csa)) +
+  geom_point()+
+  stat_smooth(method = "lm", se = FALSE)+
+  labs(x = "Childhood Physical Abuse Scale",
+       y = "Post-traumatic Stress Disorder Scale",
+       title = "Childhood Physical Abuse Related to PTSD")
+```
 
 
 
